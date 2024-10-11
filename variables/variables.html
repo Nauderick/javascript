@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <!-- 
+    To declare a variable we use, var, let or const key words. For a variable which changes at different time we use let but if the data doesn't change at all we use const. For example PI, country name, gravity.
+
+    > A JavaScript variable name shouldn't begin with a number
+    > A JavaScript variable name does not allow special characters except dollar sign and underscore.
+    > A JavaScript variable name follow a camelCase convention.
+    > A JavaScript variable name shouldn't have space between words. The following are valid examples of JavaScript variables. 
+
+    Valid variables in JavaScript:
+    firstName
+    lastName
+    country
+    city
+    capitalCity
+    age
+    isMarried
+
+    first_name
+    last_name
+    is_married
+    capital_city
+
+    num1
+    num_1
+    _num_1
+    $num1
+    year2019
+    year_2019
+    
+    Obs.: Camel case(camelCase) or the first way of declaring is conventional in JavaScript. 
+
+    Invalid variable:
+    first-name
+    1_num
+    num_#_1
+    -->
+
+    <script>
+        // Declaring different variables of different dat types
+
+        let firstName = 'Asabeneh'; // first name of a person
+        let lastName = 'Yetayeh'; // last name of a person
+        let country = 'Findland'; // country
+        let city = 'Helsinki'; //capital city
+        let age = 100; //age in years
+        let isMarried = true;
+        console.log(firstName, lastName, country, city, age, isMarried);
+
+        // Declaring variables with number values
+
+        const gravity = 9.81; // earth gravity in m/s²
+        const boilingPoint = 100; // water boiling point, temperature in °C
+        const PI = 3.14; // geometrical constant
+        console.log(gravity, boilingPoint, PI)
+
+        // Variables can also be declaring in one line separated by comma
+
+        let name = 'Asabeneh', job = 'Teacher', live = 'Finland';
+        console.log(name, job, live);
+
+
+        // Exercise - 1: Variables
+
+        // 1.Declare four variables without assigning values
+        let firstVariable;
+        let secondVariable;
+        let thirdVariable;
+        let fourthVariable;
+
+        // 2.Declare four variables with assigning values
+        let firstVariable_02 = 'TAKE THAT DEPRESSION!!!';
+        let secondVariable_02 = 15478;
+        let thirdVariable_02 = false;
+        let fourthVariable_02 = 'Something';
+        console.log(firstVariable_02, secondVariable_02, thirdVariable_02, fourthVariable_02);
+
+        // 3.Declare variables to store your first name, last name, marital status, country and age in multiple lines
+        let firstName_02 = "Nauderick";
+        let lastName_02 = 'Noob';
+        let maritalStatus = 'Loneliness';
+        let country_02 = 'Brazil';
+        let age_02 = 150;
+        console.log(firstName_02, lastName_02, maritalStatus, country_02, age_02);
+
+        // 4.Declare variables to store your first name, last name, marital status, country and age in a single line
+        let firstName03 = 'Nauderick', lastName03 = 'Noob', maritalStatus02 = 'Loneliness', country03 = 'Brazil', age03 = 150;
+        console.log(firstName03, lastName03, maritalStatus02, country03, age03)
+
+        // 5.Declare two variables myAge and yourAge and assign them initial values and log to browser console.
+        let myAge = 'I am 25 years old.';
+        let yourAge = 'You are 30 years old.';
+        console.log(myAge, yourAge);
+    </script>
+</body>
+</html>
